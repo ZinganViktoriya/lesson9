@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height:100vh;
+}
+/*psevdoclassess*/
+a {
+	font-size: 24px;
+}
+a:hover {
+	color: red;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	color: green;
+}
+a:focus {
+	background: red;
+}
+
+input {
+	background: white;
+	border: none;
+	border-bottom: 1px black solid;
+	outline: none;
+	transition: all .5s;
+}
+input:focus {
+	background: yellow;
+}
+/*:active, :disable*/
+
+ul li:first-child {
+	background: green;
+}
+ul li:last-child {
+	background: red;
+}
+ul li:nth-child(2) {
+	background: pink;
+}
+ul li:nth-child(odd) {
+	border: 5px yellow solid;
+}
+ul li:nth-child(even){
+	border: 5px blue solid;
+}
+/*
+ul li:nth-child(4) {
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: lightgreen;
+	font-size: 20px;
+	position: relative;
+	transition: all .5s;
+}
+ul li:nth-child(4) div:hover {
+	z-index: 1;
+	transition: all .5s;
+}
+ul li:nth-child(4) div:before {
+	content: "";
+	width: 100px;
+	height: 40px;
+	background: darkred;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}*/
+
+/*vlojheniya*/
+ul li a { /*все "а"*/
+	font-size: 50px;
+}
+ul > li > a {  /*непосредственно определенная "а"*/
+	background: grey;
+}
+ul > li > a + p { /*на том же уровне вложенности после "а" непосредственно следующий*/
+
+}
+ul > li > a ~ p { /*на том же уровне вложенности с "а" и после "а"" - все элементы*/
+
+}
+
+input[type="text"] {
+
+}
+a[tabindex="1"] { /*атрибут полностью совпадает*/
+
+}
+img[src*="/posts/"] { /*атрибут содержит*/
+
+}
+a[tabindex^="1"] { /*атрибут начинается с*/
+
+}
+a[href$="html"] { /*атрибут заканчивается*/
+
+}
